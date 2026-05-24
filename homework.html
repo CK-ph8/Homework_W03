@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:  #eaf0f8;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #4a90d9;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 0 0 24px 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 28px;
+            margin: 0 0 10px 0;
+            font-weight: 600;
+        }
+
+        header p{
+            font-size: 14px;
+            margin: 0;
+            opacity: 0.9;
+        }
+
+        .container{
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        .card{
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            padding: 20px 22px;
+            margin-bottom: 22px;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 22px;
+            color: #000
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            display: block;
+            object-fit: cover;
+        }
+
+        .image-container img.circle {
+            width: 250px;
+            height: 250px; 
+            border-radius: 50%;
+        }
+
+        .image-container img.oval {
+           width: 300px;
+           height: 180px; 
+           border-radius: 50%;
+        }
+
+        table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+        text-align: center;
+        }
+
+        th, td {
+        border: 1px solid #dee2e6;
+        padding: 12px;
+        }
+
+        th{
+            background-color: #4a90d9;
+            color: white;
+            font-weight: 600;
+        }
+
+        td {
+        padding: 10px 14px;
+        text-align: center;
+        border: 1px solid #e5e9f0;
+         }
+
+        .form-card {
+            margin: 0 auto;
+        }
+        
+
+        .form-card h2{
+            text-align: center;
+            font-size: 24px;
+        }
+        
+
+        .form-group{
+            margin-bottom: 14px;
+            max-width: 100%;
+        
+        }
+
+        .form-group label {
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .form-group label .required {
+            color: #cc0000;
+            margin-left: 3px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+            outline: none;
+            background-color: #fff;
+        }
+         .form-group input[type="file"] {
+        font-size: 13px;
+        width: 390px;
+        max-width: 100%;
+        padding: 6px 8px;
+        border: 1px solid #c8cfd8;
+        border-radius: 8px;
+        }
+
+         .form-group textarea {
+        height: 110px;
+        resize: vertical;
+        }
+
+
+        .inline-group {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        flex-wrap: wrap;
+        }
+
+        .inline-group label {
+            display: flex;
+            align-items: center;
+            font-weight: normal;
+            font-size: 14px;
+            cursor: pointer;
+            margin-bottom: 0;
+        }
+
+         .inline-group input {
+            margin-right: 6px;
+        }
+
+        .btn-row {
+            display: flex;
+            gap: 10px;
+            margin-top: 25px;
+        }
+
+        .btn-1 {
+            background-color: #357abd;
+            color: white;
+            padding: 10px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .btn-reset {
+            background-color: #357abd;
+            color: white;
+            padding: 10px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Practice Webpage</h1>
+        <p>HTML+CSS Practice (Forms + Table Advanced)</p>
+    </header>
+
+<!--Image Section-->
+        <section class="card">
+             <h2>Image Section</h2>
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1501952476817-d7ae22e8ee4e?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cochem, Germany">
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Image Circle</h2>
+            <div class="image-container">
+                <img class="circle" src="https://images.unsplash.com/photo-1501952476817-d7ae22e8ee4e?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cochem, Germany">
+        </section>
+
+        <section class="card">
+            <h2>Image Oval</h2>
+            <div class="image-container">
+                <img class="oval" src="https://images.unsplash.com/photo-1501952476817-d7ae22e8ee4e?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cochem, Germany">
+         </div>
+        </section>
+
+<!--Table-->
+        <section class="card">
+            <h2>Advanced Table</h2>
+            <table border="1" cellspacing="0" cellpadding="8">
+                <thead>
+                    <tr>
+                        <th rowspan="2">Name</th>
+                        <th colspan="2">Scores</th>
+                        <th rowspan="2">Grade</th>
+                    </tr>
+
+                    <tr>
+                        <th>Math</th>
+                        <th>CS</th>
+
+                    </tr>
+                </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Alice</td>
+                            <td>90</td>
+                            <td>95</td>
+                            <td>A</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Bob</td>
+                            <td>80</td>
+                            <td>85</td>
+                            <td>B</td>
+                        </tr>
+                    </tbody>
+            </table>
+        </section>
+
+<!--Form 1-->
+        <section class="form-card">
+            <div class="card form-card">
+                <h2>Form 1: Basic Info</h2>
+                <form>
+                     <div class="form-group">
+                        <label for="name">Name <span class="required">*</span></label>
+                        <input type="text" name="name" id="name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password <span class="required">*</span></label>
+                        <input type="password" name="password" id="password">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="file-upload">Upload File</label>
+                        <input type="file" name="file" id="file">
+                    </div>
+
+                    <div class="btn-row">
+                        <button type="submit" class="btn-1">Submit</button>
+                        <button type="reset" class="btn-reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </section><br>
+
+<!--Form 2-->
+        <section class="card form-card">
+            <div class="form-section">
+                <h2>Form 2: Survey Form</h2>
+                <div>
+                    <label for="course" class="field-label">Choose Course <span class="required">*</span></label>
+                    <select name="course">
+                        <option value="" disable selected> --Select-- </option>
+                        <option value="web">Web Development</option>
+                        <option value="graphic">Graphic Design</option>
+                        <option value="ux-ui">Interaction Design</option>
+                        <option value="cyber">Cybersecurity</option>
+                    </select>
+                </div>
+            
+                        <div class="form-group">
+                            <label>Gender</label>
+                                <div class="inline-group">
+                                    <label><input type="radio" name="gender" value="male"> Male</label>
+                                    <label><input type="radio" name="gender" value="female">Female</label>
+                                </div>
+                        </div>
+
+                        <div class="form-group"> 
+                            <label>Skills</label>
+                                <div class="inline-group">
+                                    <label><input type="checkbox" name="skills" value="html">HTML</label>
+                                    <label><input type="checkbox" name="skills" value="css">CSS</label>
+                                    <label><input type="checkbox" name="skills" value="js">JS</label>
+                                </div>
+                        </div>
+
+                                <div class="form-group">.sixth\Coding\homework
+                                    <label for="phone">Phone <span class="required">*</span></label>
+                                    <input type="tel" name="phone" id="phone">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea name="message" id="message"></textarea>
+                                </div>
+            
+                                <div class="btn-container">
+                                    <button type="submit" class="btn-1">Send</button>
+                                </div>
+                </form>
+            </div>
+        </section>
+</body>
+</html>
